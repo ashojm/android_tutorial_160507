@@ -13,6 +13,11 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
     <Button
+        android:layout_centerInParent="true"
+        android:text="android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
         android:layout_toRightOf="@id/editText1"
         android:text="hello"
         android:layout_width="wrap_content"
@@ -23,9 +28,10 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
     <Button
-        android:layout_alignTop="@id/editText2"
+        android:layout_alignBottom="@id/editText2"
         android:layout_toRightOf="@id/editText2"
         android:text="world"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
 </RelativeLayout>
