@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +30,27 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 Toast.makeText(MainActivity.this, "checkbox : "+isChecked,
                         Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        RadioGroup radioGroup = (RadioGroup)findViewById(R.id.myRadioGroup);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId){
+                    case R.id.radio1:
+                        Toast.makeText(MainActivity.this, "radio1 checked",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.radio2:
+                        Toast.makeText(MainActivity.this, "radio2 checked",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.radio3:
+                        Toast.makeText(MainActivity.this, "radio3 checked",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                }
             }
         });
     }
