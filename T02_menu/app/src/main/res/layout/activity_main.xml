@@ -10,9 +10,12 @@
     tools:context="com.example.c.t02_menu.MainActivity">
 
     <TextView
+        android:singleLine="true"
+        android:typeface="monospace"
+        android:textSize="30dp"
         android:id="@+id/textView"
         android:background="#0f0"
-        android:layout_width="100dp"
+        android:layout_width="120dp"
         android:layout_height="100dp"
         android:text="Hello World!" />
 </RelativeLayout>
