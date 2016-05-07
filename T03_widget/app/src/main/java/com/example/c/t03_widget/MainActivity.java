@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -55,6 +56,17 @@ public class MainActivity extends AppCompatActivity {
 //                                Toast.LENGTH_SHORT).show();
 //                        break;
 //                }
+            }
+        });
+
+        Button btnOk = (Button)findViewById(R.id.btnOK);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText editText = (EditText)findViewById(R.id.editText);
+                String str = editText.getText().toString();
+                Toast.makeText(MainActivity.this, str, Toast.LENGTH_SHORT).show();
+                editText.setText("");
             }
         });
     }
