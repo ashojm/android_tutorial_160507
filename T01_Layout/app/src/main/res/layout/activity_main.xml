@@ -26,11 +26,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:background="#ff0000"
             android:layout_weight="1"
             android:text="hello"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <Button
+            android:background="#00ff00"
             android:layout_weight="2"
             android:text="world"
             android:layout_width="0dp"
