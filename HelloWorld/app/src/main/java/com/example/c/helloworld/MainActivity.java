@@ -12,6 +12,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Log.e("hello", "message");
-        // todo : 여기에 나중에 작업
     }
 }
